@@ -32,12 +32,12 @@ Ensure that you have the following installed on your system:
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/chat-app.git
+   git clone https://github.com/PradeepTiwarii/mini-whatsapp.git
    ```
 
 2. Navigate to the project directory
    ```bash
-   cd chat-app
+   cd mini-whatsapp
    ```
 
 3. Install the dependencies
