@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New chat</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.chat-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.from,
+.to,
+.msg {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    font-size: 16px;
+}
+
+.from:hover,
+.to:hover,
+.msg:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.from:focus,
+.to:focus,
+.msg:focus {
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(63, 81, 181, 0.5);
+}
+
+.nButton {
+    background-color: rgb(84, 84, 203);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+}
+
+.nButton:hover {
+    background-color: rgb(51, 51, 113);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nButton:active {
+    background-color: #00251a;
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+.main{
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+    </style>
+</head>
+<body><div class="main">
+    <form method="post" action="/chats">
+        <div class="chat-container">
+            <div class="chat-form">
+                <h3 class="h3">Write new Chat</h3>
+                <input class="from" type="text" placeholder="Who are you?" name="from">
+                <textarea class="msg" name="msg" placeholder="Write your message..."></textarea>
+                <input class="to" type="text" placeholder="Add receiver" name="to">
+                <button class="nButton">Add Chat</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
